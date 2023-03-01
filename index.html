@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="app.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -22,11 +23,18 @@
             <span class="aside-dis">DIARY</span>
         </header>
         <section class="cetagories">
-            <div class="cetagory">Show All Billionaires</div>
-            <div class="cetagory">Richest by industry<br>
-                <sapn class="mini">(Technology)</sapn>
+            <div data-value="all" class="cetagory"><p>Show All Billionaires</p></div>
+            <div data-value="technology" class="cetagory"><p>
+                Richest by industry<br>
+                    <sapn class="mini">(Technology)</sapn>
+            </p>
             </div>
-            <div class="cetagory">Richest by states<br>
+            <div data-value="finace" class="cetagory"><p>
+                Richest by industry<br>
+                    <sapn class="mini">(Finace)</sapn>
+            </p>
+            </div>
+            <div data-value="texas" class="cetagory">Richest by states<br>
                 <sapn class="mini">(Texas)</sapn>
             </div>
 
@@ -37,98 +45,16 @@
             <form>
                 <input placeholder="Search" type="text">
             </form>
-            <span class="ct-name">dkfjei</span>
+            <span class="ct-name"></span>
             <a href="#" class="logo">
                 <img class="logo" src="images/logo/logo1.png" alt="">
             </a>
         </nav>
         <section class="main-container">
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
-            <article class="card">
-                <h3 class="card-title">Jeff Bezos</h3>
-                <div>
-                    <img class="card-image" src="images/jeff.jpg" alt="">
-                    <div class="card-info">
-                        <p>Citizenship: <span class="citizenship">United</span></p>
-                        <p>State: <span class="state">Washing</span></p>
-                        <p>City: <span class="city">Medina</span></p>
-                        <p>Total Shares: <span class="shares">992634</span></p>
-                        <p>Share Price: <span>$</span> <span class="price">99.7</span></p>
-                    </div>
-                </div>
-                <p>Source: <span class="source">Amazon</span></p>
-            </article>
+
+
         </section>
-        <button class="btn">Load More</button>
+        <button class="btn btn-more">Load More</button>
     </main>
 </body>
 
