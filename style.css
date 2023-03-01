@@ -1,0 +1,196 @@
+:root {
+  --gray-1: #d9d9d9;
+  --gray-2: #fcfafa;
+  --dark: #0e1b34;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  background-color: var(--gray-1);
+  min-height: 100vh;
+  flex: 1 9999 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  background: var(--dark);
+  height: 100vh;
+  flex-basis: 220px;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+aside header {
+  margin-bottom: 40px;
+}
+
+.aside-title {
+  font-weight: 700;
+  color: var(--gray-1);
+}
+.aside-dis {
+  font-weight: 400;
+  color: var(--gray-1);
+}
+
+.cetagories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cetagory {
+  background-color: var(--gray-1);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  display: grid;
+  place-content: center;
+}
+
+.mini {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--gray-2);
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 50px;
+}
+input {
+  width: 150px;
+  border: 0;
+  outline: 0;
+  padding-block: 4px;
+  border-bottom: 2px solid #0e1b34;
+  background-color: transparent;
+}
+
+.ct-name {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.card {
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  color: #d9d9d9;
+  padding-block: 0.5rem;
+}
+
+.main-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.card-image {
+  width: 130px;
+}
+
+.card > div {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+  margin-bottom: 4px;
+  gap: 10px;
+}
+
+.card-info {
+  border-left: 1px solid #d9d9d9;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.card-info p {
+  font-weight: 600;
+}
+
+.card-info span {
+  font-weight: 400;
+}
+
+.card > p {
+  margin-left: 1rem;
+}
+
+.btn {
+  border: 0;
+  background-color: var(--dark);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  min-width: 210px;
+  font-family: "Inknut Antiqua", serif;
+  color: var(--gray-1);
+  padding: 4px;
+  margin-inline: auto;
+}
+
+@media (max-width: 703px) {
+  aside {
+    height: 100%;
+    flex-basis: 100%;
+    position: relative;
+    top: 0;
+  }
+  aside header {
+    margin-bottom: 20px;
+  }
+
+  .cetagories {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cetagory {
+    flex: 1 1 150px;
+    font-size: 0.875rem;
+  }
+  .mini {
+    font-size: 0.75rem;
+  }
+  .logo {
+    width: 35px;
+  }
+}
